@@ -6,6 +6,8 @@ gem 'rails', '3.0.6'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem "mysql", '2.8.1'
+gem 'annotate-models', '1.0.4'
+
 
 # Use unicorn as the web server
 # gem 'unicorn'

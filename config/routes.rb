@@ -1,4 +1,28 @@
 Snikkit::Application.routes.draw do
+  get "users/new"
+
+  get "pages/contact"
+
+  get "pages/help"
+
+  get "pages/home"
+
+  get "pages/about"
+
+  resources :snikks
+
+  resources :microposts
+
+  resources :users
+
+  match '/sign-up',  :to => 'users#new'
+  
+  match '/contact', :to => 'pages#contact'
+  match '/about',   :to => 'pages#about'
+  match '/help',    :to => 'pages#help'
+
+  root :to => 'pages#home'  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

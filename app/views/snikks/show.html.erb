@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Content:</b>
+  <%= @snikk.content %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @snikk.url %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @snikk.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_snikk_path(@snikk) %> |
+<%= link_to 'Back', snikks_path %>

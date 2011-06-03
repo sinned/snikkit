@@ -1,0 +1,2 @@
+module SnikksHelper
+end
